@@ -18,12 +18,18 @@
     32.6px 32.6px 72px rgba(0, 0, 0, 0.324),
     100px 100px 152px rgba(0, 0, 0, 0.133);
 }
+
+.cart-global:hover {
+  box-shadow: 0 0 20px lime;
+  transition: 0.9s ease-in-out;
+}
 /*---- Global Style End ----*/
 
 /* Glowing text Start */
 .content {
   text-align: center;
   display: flex;
+  cursor: pointer;
 }
 
 .content p {
@@ -92,8 +98,10 @@
 
 #item .icon i {
   color: #fff;
-  font-weight: bolder;
+  font-weight: 200;
+  font-size: 1.2rem;
   padding-inline-start: 30px;
+  transition: 0.2s ease;
 }
 
 #item {
@@ -105,19 +113,22 @@
 
 #item li {
   list-style: none;
-  padding-right: 10px;
+  font-weight: 800;
+  padding-right: 30px;
 }
 
 #item li a {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
+  transition: 0.2s ease;
 }
 
 #item li a:hover,
 #item .icon i:hover {
   color: #ff5733;
   cursor: pointer;
+  transition: 1.9s ease;
 }
 /*---- Nav  Style End ----*/
 
@@ -173,6 +184,7 @@
 
 .mid .btn a.simple:hover {
   color: #ff5733;
+  transition: 1.9s ease;
 }
 
 .mid .btn a.border {
@@ -186,6 +198,7 @@
 .mid .btn a.border:hover {
   background-color: #fff;
   border: 1px solid #fff;
+  transition: 1.9s ease;
 }
 /*--- Content End ---*/
 /*---- Back Ground Image End ----*/
@@ -240,6 +253,7 @@ h6 {
 .details .one a:hover {
   background-color: #fff;
   color: #f13a11;
+  transition: 1.9s ease;
 }
 
 .details .two {
@@ -474,6 +488,12 @@ h6 {
   padding: 15px;
   font-size: 1.5rem;
   margin: 13px 0;
+  cursor: pointer;
+}
+.contact .form .submit button:hover {
+  background: #ccc;
+  color: #000;
+  transition: 1.9s ease;
 }
 
 .contact .map {
@@ -511,9 +531,15 @@ footer {
 footer p {
   color: #7f8c8d;
   justify-content: flex-start;
+  cursor: pointer;
 }
 footer p i {
   padding-right: 10px;
   color: #f13a11;
+}
+
+footer .f-icon {
+  font-size: 2rem;
+  cursor: pointer;
 }
 /*---- Footer section End ----*/
